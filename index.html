@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT MANAGEMENT SYSTEM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1> Student Management system</h1>
+        <p>Manage student records</p>
+
+        <section id="searchSection">
+
+            <input type="text" id="searchInput" placeholder="Search Students....">
+
+            <select id="levelFilter">
+                <option value="all">All Levels</option>
+                <option value="100">100</option>
+                <option value="200">200</option>
+                <option value="300">300</option>
+                <option value="400">400</option>
+                
+            </select>
+
+
+        </section>
+
+        <section>
+
+            <h2>ADD STUDENT</h2>
+            <form id="studentForm">
+
+            <input type="text" id="studentName" placeholder="Student Name">
+            <input type="number" id="studentAge" placeholder="Age">
+
+            <select id="studentLevel">
+                <option value="" disabled selected>Select Level</option>
+                <option value="100">100</option>
+                <option value="200">200</option>
+                <option value="300">300</option>
+                <option value="400">400</option>
+                
+            </select>
+            <input type="text" id="studentCourse" placeholder="Course">
+            <button type="submit" id="submitBtn">Add student</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Students</h2>
+            <p id="studentCount">Total Students: 0</p>
+
+
+            <div id="studentList">
+                <p id="emptyState">No student found.</p>
+            </div>
+        </section>
+
+
+
+
+
+        <script src="app.js"></script>
+    
+    
+</body>
+</html>
